@@ -32,6 +32,11 @@ app.get('/api/:param', function (req, res) {
     }
 });
 
+app.get('/kill', function (req, res) {
+    // This is useful for showcasing self-healing of the cluster
+    process.exit(42);
+});
+
 // Set up listener
 app.listen(port, function () {
     console.log("hello-kubernetes version %s", packageJson.version);
