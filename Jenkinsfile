@@ -24,7 +24,7 @@ node('docker') {
         }
 
         def image
-        String imageName = "cloudogu/hello-kubernetes:${readVersion()}"
+        String imageName = "cloudogu/hello-k8s:${readVersion()}"
 
         stage('Build Images') {
             image = docker.build imageName, '.'
