@@ -31,7 +31,7 @@ node('docker') {
         }
 
         stage('Deploy Images') {
-            docker.withRegistry('', 'hub.docker.com-cesmarvin') {
+            docker.withRegistry('', 'cesmarvin-dockerhub-access-token') {
                 //if (git.isTag()) {
                 if (env.BRANCH_NAME == "master") {
                     image.push()
