@@ -31,4 +31,4 @@ spec:
         - containerPort: 8080
         env:
         - name: MESSAGE
-          value: I just deployed this on Kubernetes 2024!
+          value: We just deployed this on Kubernetes 2024!
