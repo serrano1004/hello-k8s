@@ -15,7 +15,7 @@ kind: Deployment
 metadata:
   name: hello-kubernetes-custom
 spec:
-  replicas: 3
+  replicas: 5
   selector:
     matchLabels:
       app: hello-kubernetes-custom
@@ -31,4 +31,4 @@ spec:
         - containerPort: 8080
         env:
         - name: MESSAGE
-          value: We just deployed this on Kubernetes 2024!
+          value: We just deployed this shit on Kubernetes 2024!
